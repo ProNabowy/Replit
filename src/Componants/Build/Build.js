@@ -10,7 +10,7 @@ const Build = () =>
             autoplay_scrolling("project-example-one", "left");
             autoplay_scrolling("project-example-two", "right");
             autoplay_scrolling("project-example-three" , "left");
-        }, 40);
+        }, 60);
         return () => clearInterval(timeOut);
     }, []);
 

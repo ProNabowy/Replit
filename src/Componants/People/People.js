@@ -8,7 +8,7 @@ const People = () =>
         const timeOut = setInterval(() =>
         {
             autoplay_scrolling("opinions-bar", "right");
-        }, 40);
+        }, 60);
         return () => clearInterval(timeOut);
     }, []);
     return (
