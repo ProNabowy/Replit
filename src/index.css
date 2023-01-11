@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none !important;
+  text-decoration: none !important;
+}
+:root {
+  --transition: 0.5s;
+  --main-color: #0E1525;
+  --second-color: #1C2333;
+  --code-color: #4688cd;
+  --blue: rgb(0, 83, 166);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: var(--main-color) !important;
+}
+
+
+/* 
+  ============================================= Scroll Style ====================================================
+*/
+::-webkit-scrollbar-track {
+    background-color: var(--main-color) !important ;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--second-color) !important;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #3c445c !important;
+}
+
+/* 
+  ============================================================= Gloable Classes ============================================================
+*/
+
+a {
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--blue) !important;
+}
+
+
+.min-height {
+  min-height: 800px !important;
+  margin-top: 100px !important;
+}
+.box-shadow:hover {
+      box-shadow: 0 0 24px #0481ff !important;
+}
+.gray-shadow:hover {
+  box-shadow: 0 0 24px #294074;
+}
+.add-fixed-position {
+  position: fixed !important;
+  display: block !important;
+}
+.add-absolute-position {
+  position: absolute !important;
+  display: none !important;
+}
+.absolute-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+}
+.fixed-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500px;
+}
+
+.toggle-btns {
+  background-color: var(--second-color) !important;
+  transition: var(--transition);
+}
+
+pre {
+  margin:  0 !important;
+}
+
+
+/* 
+  ============================================================= build your dream Project ============================================================
+*/
+
+.build-project {
+  padding: 10px;
+  mask-image: radial-gradient(closest-side, black 90%, transparent 100%);
+}
+
+.build-project > div::-webkit-scrollbar-track {
+    display: none;
+}
+.build-project > div::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+
+@media (min-width: 991px) {
+  .w-lg-50 {
+    width: 50% !important;
+  }
+  .w-lg-75 {
+    width: 75% !important;
+  }
+  .w-lg-100 {
+    width: 100% !important;
+  }
+  
+}
+@media (max-width:991px) {
+  .w-md-50 {
+    width: 50% !important;
+  }
+  .w-md-75 {
+    width: 75% !important;
+  }
+  .w-md-100 {
+    width: 100% !important;
+  }
+    .re-order-text {
+    order: -1 !important;
+    margin-bottom: 20px !important;
+  }
+  .generateor-wrapper {
+    overflow: auto;
+  }
+  .min-height {
+    min-height: 100% !important;
+  }
+
+}
+@media (max-width: 768px) {
+  .w-sm-100 {
+    width: 100% !important;
+  }
+  footer li a {
+    font-size: 11px;
+  }
+  footer h6 {
+    font-size: 13px;
+  }
+}

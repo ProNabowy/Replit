@@ -1,0 +1,61 @@
+.car-class {
+  position: absolute;
+  right: -50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+}
+
+.state-on {
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  transform: translate(-50% , -10px);
+}
+.state-on h5::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  width: 7px;
+  height: 7px;
+  background-color: #0cea68;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 10px #0cea68;
+}
+
+.memory {
+  position: absolute;
+  right: -100px;
+}
+.memory > div h6 {
+  width: fit-content;
+  margin-bottom: 10px;
+}
+.memory > div h6::after {
+  content: "4x";
+  border-radius: 50%;
+  padding: 1px;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  background-color: #5239cc;
+}
+
+.memory > div div {
+  width: 200px;
+  border: 1px solid #dddddd42;
+  background-color: #2b3245;
+  border-radius: 5px;
+}
+
+.memory > div div span {
+  display: block;
+  width: 50%;
+  padding: 3px;
+  background-color: #795eff;
+  border-radius: inherit;
+  box-shadow: 0 0 5px #795eff;
+}

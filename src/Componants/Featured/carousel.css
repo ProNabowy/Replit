@@ -1,0 +1,15 @@
+.box {
+    transform: scale(80%);
+}
+.box:hover {
+    transition: var(--transition) all ease-in-out;
+    transform: scale(100%);
+}
+.carousel-bar::-webkit-scrollbar-track,
+.opinions-bar::-webkit-scrollbar-track {
+    display: none;
+}
+.carousel-bar::-webkit-scrollbar-thumb,
+.opinions-bar::-webkit-scrollbar-thumb {
+    display: none;
+}
